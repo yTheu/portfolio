@@ -1,18 +1,18 @@
 tailwind.config = {
-    theme: {
-        extend: {
-            colors: {
-                brand: {
-                     bg: '#0b0d10',
-                        card: '#14171a',
-                        purple: '#9d4edd',
-                        purpleHover: '#c77dff',
-                        textGray: '#a1a7b3',
-                    }
+            theme: {
+                extend: {
+                    colors: {
+                        "brand-bg": "#060606",
+                        "brand-card": "#0d0d0d",
+                        "brand-purple": "#8b5cf6",
+                        "brand-purpleHover": "#a78bfa",
+                        "brand-textGray": "#9ca3af",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
             },
-            fontFamily: {
-                sans: ['Inter', 'sans-serif'],
-            }
-         }
-    }
-}
+        };
+
+document.getElementById("year").textContent = new Date().getFullYear();

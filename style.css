@@ -1,93 +1,118 @@
 body {
-    background-color: #0b0d10;
+    background: radial-gradient(circle at top, rgba(139, 92, 246, 0.12), transparent 35%), #07070a;
     color: white;
+    font-family: "Inter", sans-serif;
     overflow-x: hidden;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background:
-        radial-gradient(circle at top left, rgba(157, 78, 221, 0.12), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(199, 125, 255, 0.08), transparent 25%);
-    pointer-events: none;
-    z-index: -1;
-}
-
-::-webkit-scrollbar {
-    width: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: #0b0d10;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #2b2f36;
-    border-radius: 999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #9d4edd;
-}
-
-selection {
-    background: #9d4edd;
-    color: white;
-}
-
-
-.glow {
-    box-shadow:
-        0 0 80px rgba(157, 78, 221, 0.15);
-}
-
-.card-hover {
-    transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        background 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.card-hover:hover {
-    transform: translateY(-4px);
-    border-color: rgba(157, 78, 221, 0.35);
-    box-shadow: 0 10px 40px rgba(157, 78, 221, 0.08);
-}
-
-.btn-primary {
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.25);
-}
-
-.section-line {
-    position: relative;
-}
-
-.section-line::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 120px;
-    height: 1px;
-    background: linear-gradient(to right, #9d4edd, transparent);
-}
-
-.text-soft {
-    color: #c7ccd4;
 }
 
 .glass {
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
+    background: rgba(10, 10, 15, 0.65);
+}
+
+.card-hover {
+    transition: 0.3s ease;
+    background: #111114;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.25);
+    background: linear-gradient(145deg, rgba(139, 92, 246, 0.08), #111114);
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+    background: #111114;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(139, 92, 246, 0.25);
+    background: linear-gradient(145deg, rgba(139, 92, 246, 0.08), #111114);
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: -120px;
+    right: -120px;
+    border-radius: 999px;
+    background: rgba(139, 92, 246, 0.08);
+    filter: blur(35px);
+    pointer-events: none;
+}
+
+.gradient-border {
+    position: relative;
+}
+
+.gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 1px;
+    background: linear-gradient(145deg, rgba(139, 92, 246, 0.22), rgba(255, 255, 255, 0.03));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.tech {
+    padding: 12px 18px;
+    border-radius: 14px;
+    background: rgba(139, 92, 246, 0.10);
+    border: 1px solid rgba(139, 92, 246, 0.18);
+    font-size: 14px;
+    font-weight: 600;
+    color: #a78bfa;
+    transition: 0.25s ease;
+}
+
+.tech:hover {
+    transform: translateY(-3px);
+    background: rgba(139, 92, 246, 0.18);
+    border-color: rgba(139, 92, 246, 0.35);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #07070a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.35);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(139, 92, 246, 0.6);
+}
+
+::selection {
+    background: #8b5cf6;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        line-height: 1.1;
+    }
+
+    .project-card {
+        padding: 2rem;
+    }
 }

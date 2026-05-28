@@ -1,64 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Matheus Castro | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans selection:bg-brand-purple selection:text-white">
 
+<body class="font-sans selection:bg-brand-purple selection:text-white">
     <header class="fixed top-0 w-full z-50 bg-brand-bg/70 glass border-b border-white/5">
         <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="#" class="text-brand-purple font-mono font-bold text-lg">&lt;/&gt; Matheus Castro</a>
+            <a href="#"class="text-brand-purple font-mono font-bold text-lg">&lt;/&gt; Matheus Castro</a>
             <nav class="hidden md:flex gap-8 text-sm font-medium text-brand-textGray">
-                <a href="#sobre" class="hover:text-brand-purple transition">Sobre</a>
-                <a href="#projetos" class="hover:text-brand-purple transition">Projetos</a>
-                <a href="#experiencia" class="hover:text-brand-purple transition">Experiência</a>
-                <a href="#contato" class="hover:text-brand-purple transition">Contato</a>
+                <a href="#sobre" class="hover:text-brand-purple transition">
+                    Sobre
+                </a>
+                <a href="#projetos" class="hover:text-brand-purple transition">
+                    Projetos
+                </a>
+                <a href="#stack" class="hover:text-brand-purple transition">
+                    Tecnologias
+                </a>
+                <a href="#contato" class="hover:text-brand-purple transition">
+                    Contato
+                </a>
             </nav>
-            <div class="text-brand-textGray cursor-pointer hover:text-white transition">☼</div>
         </div>
     </header>
 
     <main class="pt-32">
         <section class="max-w-5xl mx-auto px-6 text-center mb-40 relative">
-    
             <div class="absolute inset-0 flex justify-center">
                 <div class="w-[500px] h-[500px] bg-brand-purple/10 blur-[140px] rounded-full"></div>
             </div>
 
             <div class="relative z-10">
-                <p class="text-brand-purple uppercase tracking-[0.3em] text-xs font-bold mb-6">
-                    Portfolio • Desenvolvedor
-                </p>
-
                 <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-none">
-                    Matheus <span class="text-brand-purple">Castro</span>
+                    Matheus
+                    <span class="text-brand-purple">Castro</span>
                 </h1>
-
-                <p class="text-xl text-brand-textGray mb-6">
-                    Desenvolvimento de Software, IA e Automação
-                </p>
-
-                <p class="max-w-2xl mx-auto text-soft leading-relaxed mb-10 text-lg">
-                    Desenvolvendo aplicações modernas com foco em inteligência artificial,
-                    automação e experiências digitais funcionais.
-                </p>
+                <p class="text-xl text-brand-textGray mb-6">Inteligência Artificial • Visão Computacional • Desenvolvimento Web</p>
+                <p class="max-w-2xl mx-auto text-brand-textGray leading-relaxed mb-10 text-lg">Desenvolvedor em formação focado em IA, soluções Web e com um toque educacional.</p>
 
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="#projetos"
-                    class="btn-primary bg-brand-purple hover:bg-brand-purpleHover text-black px-8 py-3 rounded-xl font-bold">
-                        Ver Projetos
-                    </a>
-
-                    <a href="#contato"
-                    class="border border-white/10 hover:border-brand-purple text-white px-8 py-3 rounded-xl font-bold transition-all">
-                        Contato
-                    </a>
+                    <a href="#projetos" class="bg-brand-purple hover:bg-brand-purpleHover text-black px-8 py-3 rounded-xl font-bold transition">Ver Projetos</a>
+                    <a href="#contato" class="border border-white/10 hover:border-brand-purple text-white px-8 py-3 rounded-xl font-bold transition">Contato</a>
                 </div>
             </div>
         </section>
@@ -68,27 +57,16 @@
                 <div>
                     <span class="text-xs font-bold tracking-widest text-brand-purple uppercase">Sobre Mim</span>
                     <h2 class="text-4xl font-bold mt-2 mb-8">Quem sou eu</h2>
+
                     <div class="space-y-4 text-brand-textGray text-lg leading-relaxed">
                         <p>Licenciando em Computação pelo <span class="text-brand-purple">Instituto Federal Baiano</span>, com foco em desenvolvimento de software e IA.</p>
-                        <p>Atuo na área da educação, desenvolvendo sistemas para ajudar no processo pedagógico. Foco atual: <span class="text-brand-purple">automação e visão computacional</span>.</p>
+                        <p>Atuo na área da educação desenvolvendo soluções tecnológicas voltadas para o <span class="text-brand-purple">ensino e experiências digitais</span>.</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="card-hover bg-brand-card p-6 rounded-2xl border border-white/5">
-                        <h3 class="font-bold mb-1 text-xl">Dev Software</h3>
-                        <p class="text-xs text-brand-textGray leading-tight">Python, JS, C/C#</p>
-                    </div>
-                    <div class="card-hover bg-brand-card p-6 rounded-2xl border border-white/5">
-                        <h3 class="font-bold mb-1 text-xl">IA & Visão</h3>
-                        <p class="text-xs text-brand-textGray leading-tight">OpenCV, YOLO, Scikit-learn</p>
-                    </div>
-                    <div class="card-hover bg-brand-card p-6 rounded-2xl border border-white/5">
-                        <h3 class="font-bold mb-1 text-xl">Educação</h3>
-                        <p class="text-xs text-brand-textGray leading-tight">Propostas pedagógicas</p>
-                    </div>
-                    <div class="card-hover bg-brand-card p-6 rounded-2xl border border-white/5">
-                        <h3 class="font-bold mb-1 text-xl">Automação</h3>
-                        <p class="text-xs text-brand-textGray leading-tight">Tarefas e processos</p>
+
+                <div class="flex items-center justify-center">
+                    <div class="w-full max-w-sm">
+                        <img src="https://github.com/yTheu.png" alt="Foto" class="w-full h-auto rounded-3xl border border-white/5 object-cover">
                     </div>
                 </div>
             </div>
@@ -97,45 +75,72 @@
         <section id="projetos" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
             <span class="text-xs font-bold tracking-widest text-brand-purple uppercase">Portfólio</span>
             <h2 class="text-4xl font-bold mt-2 mb-12">Projetos</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="group bg-brand-card p-8 rounded-3xl border border-white/5 hover:bg-brand-purple/5 hover:border-brand-purple/20 transition-all duration-300">
-                    <h3 class="text-xl font-bold mb-3 group-hover:text-brand-purple transition">Tradutor de Libras</h3>
-                    <p class="text-brand-textGray text-sm mb-6 leading-relaxed">Tradutor em tempo real do alfabeto em Libras via visão computacional. Implementação de pontos articulares.</p>
-                    <div class="flex gap-2">
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+                <div class="project-card gradient-border bg-brand-card p-8 rounded-3xl border border-white/5">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-brand-purple font-bold">Inteligência Artificial</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4 text-white">LIA</h3>
+                    <p class="text-brand-textGray text-sm leading-relaxed mb-8">Sistema de visão computacional para tradução em tempo real da Língua Brasileira de Sinais utilizando rastreamento de pontos articulares.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">Python</span>
                         <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">OpenCV</span>
                         <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">Scikit-learn</span>
                     </div>
-                    <div class="flex gap-3 mt-8">
-                            <a href="#"
-                            class="bg-brand-purple text-black text-xs font-bold px-4 py-2 rounded-lg hover:bg-brand-purpleHover transition">
-                                Demo
-                            </a>
-
-                            <a href="#"
-                            class="border border-white/10 text-white text-xs font-bold px-4 py-2 rounded-lg hover:border-brand-purple transition">
-                                GitHub
-                            </a>
-                        </div>
+                    <a href="https://github.com/yTheu/LIA" class="bg-brand-purple text-black text-xs font-bold px-4 py-2 rounded-lg hover:bg-brand-purpleHover transition">GitHub</a>
                 </div>
-                <div class="group bg-brand-card p-8 rounded-3xl border border-white/5 hover:bg-brand-purple/5 hover:border-brand-purple/20 transition-all duration-300">
-                    <h3 class="text-xl font-bold mb-3 group-hover:text-brand-purple transition">Smart Trash</h3>
-                    <p class="text-brand-textGray text-sm mb-6 leading-relaxed">Lixeira inteligente utilizando YOLO para classificação de resíduos e controle via Arduino.</p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">YOLO</span>
+
+                <div class="project-card gradient-border bg-brand-card p-8 rounded-3xl border border-white/5">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-brand-purple font-bold">Automação</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4 text-white">Smart Trash</h3>
+                    <p class="text-brand-textGray text-sm leading-relaxed mb-8">Lixeira inteligente com classificação automática de resíduos usando YOLO e integração com Arduino.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">YOLOv8</span>
                         <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">Arduino</span>
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">Python</span>
                     </div>
-                    <div class="flex gap-3 mt-8">
-                            <a href="#"
-                            class="bg-brand-purple text-black text-xs font-bold px-4 py-2 rounded-lg hover:bg-brand-purpleHover transition">
-                                Demo
-                            </a>
-
-                            <a href="#"
-                            class="border border-white/10 text-white text-xs font-bold px-4 py-2 rounded-lg hover:border-brand-purple transition">
-                                GitHub
-                            </a>
-                        </div>
+                    <a href="https://github.com/yTheu/smart-trash" class="bg-brand-purple text-black text-xs font-bold px-4 py-2 rounded-lg hover:bg-brand-purpleHover transition">GitHub</a>
                 </div>
+
+                <div class="project-card gradient-border bg-brand-card p-8 rounded-3xl border border-white/5">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-brand-purple font-bold">Educação</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4 text-white">Body Parts With Minecraft Design</h3>
+                    <p class="text-brand-textGray text-sm leading-relaxed mb-8">Aplicação WEB educativa para ensino de anatomia em inglês utilizando mecânica de arrastar e soltar inspirada na identidade visual do Minecraft.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">JavaScript</span>
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">HTML/CSS</span>
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">Educação</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/yTheu/minecraft-body-parts" class="bg-brand-purple text-black text-xs font-bold px-4 py-2 rounded-lg hover:bg-brand-purpleHover transition">GitHub</a>
+                        <a href="https://minecraft-body-parts.vercel.app/" class="border border-brand-purple text-brand-purple text-xs font-bold px-4 py-2 rounded-lg hover:bg-brand-purple/10 transition">Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card gradient-border bg-brand-card p-8 rounded-3xl border border-white/5">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-brand-purple font-bold">Web Platform</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4 text-white">Sistema Gerenciador de Frotas</h3>
+                    <p class="text-brand-textGray text-sm leading-relaxed mb-8">Plataforma web em Django para gerenciamento de entregas, planejamento de rotas via Google Maps e rastreamento em tempo real de veículos.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">Django</span>
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">Google Maps API</span>
+                        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple uppercase">Threads</span>
+                    </div>
+                    <a href="https://github.com/yTheu/frota-de-entrega" class="bg-brand-purple text-black text-xs font-bold px-4 py-2 rounded-lg hover:bg-brand-purpleHover transition">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
+            <span class="text-xs font-bold tracking-widest text-brand-purple uppercase">Stack</span>
+            <h2 class="text-4xl font-bold mt-2 mb-12">Tecnologias</h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <span class="tech">Python</span>
+                <span class="tech">Django</span>
+                <span class="tech">React</span>
+                <span class="tech">NodeJS</span>
+                <span class="tech">MySQL</span>
+                <span class="tech">C/C#</span>
+                <span class="tech">Git/GitHub</span>
+                <span class="tech">Linux</span>
             </div>
         </section>
 
@@ -153,19 +158,20 @@
                 </div>
                 <div class="bg-brand-card p-8 rounded-2xl border border-white/5">
                     <p class="text-sm text-brand-textGray uppercase mb-1">GitHub</p>
-                    <a href="https://github.com/yTheu"><p class="font-medium text-sm">@yTheu</p/p></a>
+                    <a href="https://github.com/yTheu" class="font-medium text-sm hover:text-brand-purple transition">@yTheu</a>
                 </div>
             </div>
-            <a href="mailto:matheuscs0v7@gmail.com" class="inline-block mt-12 bg-brand-purple hover:bg-brand-purpleHover text-black px-10 py-4 rounded-xl font-bold transition-all shadow-lg shadow-brand-purple/20">
-                Enviar Mensagem
-            </a>
+            <div class="mt-12 text-center">
+                <a href="mailto:matheuscs0v7@gmail.com" class="bg-brand-purple hover:bg-brand-purpleHover text-black px-12 py-5 rounded-xl font-bold transition inline-block">Entrar em Contato</a>
+            </div>
         </section>
     </main>
 
     <footer class="max-w-6xl mx-auto px-6 py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-brand-textGray text-xs">
-        <p>Matheus Castro &copy;</p>
-        <p class="mt-4 md:mt-0">Feito com dedicação e muito café ☕</p>
+        <p>Matheus Castro &copy; <span id="year"></span></p>
+        <p class="mt-4 md:mt-0">Desenvolvido por <a href="https://github.com/yTheu">yTheu</a> ☕</p>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
